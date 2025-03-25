@@ -29,9 +29,21 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
+      <Stack 
+      screenOptions={
+        {
+          headerShadowVisible: false,
+          contentStyle: {
+            backgroundColor: colorScheme === 'dark' ? '#000' : '#fff',
+          },
+        }
+      }
+      >
+        <Stack.Screen name="index" 
+        options={{
+            title: 'PushApp',
+          }
+        } />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
