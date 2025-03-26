@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8b16b764-6016-429a-a072-dc15c467e1d1"
+      }
+    },
+    "owner": "figueredojose84"
   }
 }
