@@ -1,6 +1,6 @@
 import { ThemedText } from '@/components/ThemedText';
 import { usePushNotifications } from '@/hooks/usePushNotifications';
-import {View, Text, Button, FlatList} from 'react-native';
+import {View, FlatList} from 'react-native';
 
 
 
